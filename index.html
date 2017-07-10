@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <div class="cell">
+                <img src="images/BMICLogo.png" alt="">
+                <div class="addData">
+                    <p>身高 cm</p>
+                    <input type="text" class="height" placeholder="請輸入身高" required onkeyup="if(/\D/.test(this.value)){alert('請輸入數字');this.value='';}">
+                    <p>體重 kg</p>
+                    <input type="text" class="weight" placeholder="請輸入體重" required onkeyup="if(/\D/.test(this.value)){alert('請輸入數字');this.value='';}">
+                </div>
+                <div id="btn">
+                <div class="result">
+                    <p class="normal">看結果</p>
+                </div>
+                <p class="idealtext"></p>
+                </div>
+            </div>
+        </header>
+        <!--理想-->
+<!--
+        <header>
+            <div class="cell">
+                <img src="images/BMICLogo.png" alt="">
+                <div class="addData">
+                    <p>身高 cm</p>
+                    <input type="text" class="height" placeholder="請輸入身高" required>
+                    <p>體重 kg</p>
+                    <input type="text" class="weight" placeholder="請輸入體重" required>
+                </div>
+                <div id="btn">
+                <div class="result ideal">
+                    <p>20.90<br/><span>BMI</span></p>
+                    <span class="loop"></span>
+                </div>
+                <p class="idealtext">理想</p>
+                </div>
+            </div>
+        </header>
+-->
+        <!--過輕-->
+<!--
+        <header>
+            <div class="cell">
+                <img src="images/BMICLogo.png" alt="">
+                <div class="addData">
+                    <p>身高 cm</p>
+                    <input type="text" class="height" placeholder="請輸入身高" required>
+                    <p>體重 kg</p>
+                    <input type="text" class="weight" placeholder="請輸入體重" required>
+                </div>
+                <div id="btn">
+                <div class="result light">
+                    <p>11.94<br/><span>BMI</span></p>
+                    <span class="loop"></span>
+                </div>
+                <p class="lighttext">過輕</p>
+                </div>
+            </div>
+        </header>
+-->
+        <!--過重-->
+<!--
+        <header>
+            <div class="cell">
+                <img src="images/BMICLogo.png" alt="">
+                <div class="addData">
+                    <p>身高 cm</p>
+                    <input type="text" class="height" placeholder="請輸入身高" required>
+                    <p>體重 kg</p>
+                    <input type="text" class="weight" placeholder="請輸入體重" required>
+                </div>
+                <div id="btn">
+                <div class="result over">
+                    <p>26.87<br/><span>BMI</span></p>
+                    <span class="loop"></span>
+                </div>
+                <p class="overtext">過重</p>
+                </div>
+            </div>
+        </header>
+-->
+        <!--輕度肥胖-->
+<!--
+        <header>
+            <div class="cell">
+                <img src="images/BMICLogo.png" alt="">
+                <div class="addData">
+                    <p>身高 cm</p>
+                    <input type="text" class="height" placeholder="請輸入身高" required>
+                    <p>體重 kg</p>
+                    <input type="text" class="weight" placeholder="請輸入體重" required>
+                </div>
+                <div id="btn">
+                <div class="result medium">
+                    <p>29.86<br/><span>BMI</span></p>
+                    <span class="loop"></span>
+                </div>
+                <p class="mediumtext">輕度肥胖</p>
+                </div>
+            </div>
+        </header>
+-->
+        <!--中度肥胖-->
+<!--
+        <header>
+            <div class="cell">
+                <img src="images/BMICLogo.png" alt="">
+                <div class="addData">
+                    <p>身高 cm</p>
+                    <input type="text" class="height" placeholder="請輸入身高" required>
+                    <p>體重 kg</p>
+                    <input type="text" class="weight" placeholder="請輸入體重" required>
+                </div>
+                <div id="btn">
+                <div class="result medium">
+                    <p>32.85<br/><span>BMI</span></p>
+                    <span class="loop"></span>
+                </div>
+                <p class="mediumtext">中度肥胖</p>
+                </div>
+            </div>
+        </header>
+-->
+        <!--重度肥胖-->
+<!--
+        <header>
+            <div class="cell">
+                <img src="images/BMICLogo.png" alt="">
+                <div class="addData">
+                    <p>身高 cm</p>
+                    <input type="text" class="height" placeholder="請輸入身高" required>
+                    <p>體重 kg</p>
+                    <input type="text" class="weight" placeholder="請輸入體重" required>
+                </div>
+                <div id="btn">
+                <div class="result heavy">
+                    <p>38.82<br/><span>BMI</span></p>
+                    <span class="loop"></span>
+                </div>
+                <p class="heavytext">重度肥胖</p>
+                </div>
+            </div>
+        </header>
+-->
+
+
+
+        <main>
+            <h1>BMI 紀錄</h1>
+            <ul class="list">
+<!--
+                <li>
+                    <p class="txt-result-i">理想</p>
+                    <p class="txt-bmi">20.90</p>
+                    <p class="txt-kg">70kg</p>
+                    <p class="txt-cm">180cm</p>
+                    <p class="txt-date">06-19-217</p>
+                </li>
+
+                <li>
+                    <p class="txt-result-l">過輕</p>
+                    <p class="txt-bmi">11.94</p>
+                    <p class="txt-kg">80kg</p>
+                    <p class="txt-cm">180cm</p>
+                    <p class="txt-date">06-19-217</p>
+                </li>
+
+                <li>
+                    <p class="txt-result-o">過重</p>
+                    <p class="txt-bmi">20.90</p>
+                    <p class="txt-kg">70kg</p>
+                    <p class="txt-cm">180cm</p>
+                    <p class="txt-date">06-19-217</p>
+                </li>
+
+                <li>
+                    <p class="txt-result-m">輕度肥胖</p>
+                    <p class="txt-bmi">20.90</p>
+                    <p class="txt-kg">100kg</p>
+                    <p class="txt-cm">180cm</p>
+                    <p class="txt-date">06-19-217</p>
+                </li>
+
+                <li>
+                    <p class="txt-result-m">中度肥胖</p>
+                    <p class="txt-bmi">20.90</p>
+                    <p class="txt-kg">70kg</p>
+                    <p class="txt-cm">180cm</p>
+                    <p class="txt-date">06-19-217</p>
+                </li>
+
+                <li>
+                    <p class="txt-result-h">重度肥胖</p>
+                    <p class="txt-bmi">20.90</p>
+                    <p class="txt-kg">70kg</p>
+                    <p class="txt-cm">180cm</p>
+                    <p class="txt-date">06-19-217</p>
+                </li>
+-->
+
+            </ul>
+        </main>
+
+        <footer>
+        </footer>
+
+    </div>
+    <!--page結束-->
+    <script src="js/all.js"></script>
+</body>
+
+</html>

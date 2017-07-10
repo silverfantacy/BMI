@@ -1,0 +1,598 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+html {
+/*    display: block;*/
+/*    height: 100%;*/
+    background-color: #191919;
+}
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.page {
+    width: 1024px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #f6f6f6;
+}
+
+header {
+    background-color: #424242;
+    height: 147px;
+    padding: 74px 0 73px 173px;
+    display: flex;
+    align-content: center;
+    position: relative;
+    margin-bottom: 48px;
+}
+
+.cell {
+    display: flex;
+    align-content: center;
+}
+
+header img {
+    display: block;
+    height: 117px;
+    margin-right: 97px;
+    margin-top: 18px;
+}
+
+.addData {
+    display: block;
+    margin-right: 53px;
+}
+
+.addData p {
+    font-size: 18px;
+    color: #FFD366;
+    margin-bottom: 7px;
+    font-weight: 200;
+}
+
+.addData input {
+    width: 230px;
+    height: 34px;
+    background-color: rgba(255, 255, 255, 0.18);
+    border: 2px solid #FFD366;
+    border-radius: 10px;
+    font-size: 24px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.50);
+    margin-bottom: 23px;
+    padding-left: 16px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.addData input:focus {
+    outline: none;
+}
+
+#btn {
+    display: flex;
+}
+
+.result {
+    display: block;
+}
+
+.normal {
+    width: 120px;
+    height: 120px;
+    background-color: #FFD366;
+    border-radius: 60px;
+    color: #424242;
+    font-size: 24px;
+    text-align: center;
+    line-height: 120px;
+    margin-top: 18px;
+    transform: translate(5px,5px);
+    transition: 0.3s;
+    cursor: pointer;
+
+    
+}
+
+.normal:hover {
+    box-shadow: 0 1px 6px 3px rgba(255, 195, 49, 0.64);
+}
+
+.normal:active {
+    background-color: #DEA921;
+}
+
+@-webkit-keyframes loading {
+	from {
+		-webkit-transform: rotate(360deg);
+	}
+	to {
+		-webkit-transform: rotate(0deg);
+	}
+}
+@-moz-keyframes loading {
+	from {
+		-moz-transform: rotate(360deg);
+	}
+	to {
+		-moz-transform: rotate(0deg);
+	}
+}
+@-o-keyframes loading {
+	from {
+		-o-transform: rotate(360deg);
+	}
+	to {
+		-o-transform: rotate(0deg);
+	}
+}
+@keyframes loading {
+	from {
+		transform: rotate(360deg);
+	}
+	to {
+		transform: rotate(0deg);
+	}
+}
+
+.result:hover > .loop {
+    animation: loading 1s 1 linear;
+}
+
+
+/*理想*/
+
+.ideal {
+    width: 117px;
+    height: 117px;
+    border-radius: 70px;
+    border: 6px solid #86D73E;
+    font-size: 32px;
+    color: #86D73F;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 18px;
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.ideal:hover {
+    box-shadow: 0 1px 6px 3px rgba(134, 215, 62, 0.64);
+}
+
+.ideal:active {
+    background-color: #6db132;
+}
+
+.ideal p {
+    display: block;
+    margin: auto 0;
+    padding-top: 20px;
+}
+
+.ideal span {
+    font-size: 14px;
+}
+
+.ideal .loop {
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-image: url(../images/icons_loop.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #86D73F;
+    border: 3px solid #424242;
+    border-radius: 30px;
+    position: absolute;
+    top: 85px;
+    left: 85px;
+}
+
+.idealcolor {
+    float: left;
+    display: block;
+    color: #86D73F;
+    font-size: 32px;
+    margin: auto 0;
+    margin-left: 15px;
+    text-align: left;
+}
+
+
+/*過輕*/
+
+.light {
+    width: 117px;
+    height: 117px;
+    border-radius: 70px;
+    border: 6px solid #31BAF9;
+    font-size: 32px;
+    color: #31BAF9;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 18px;
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.light:hover {
+    box-shadow: 0 1px 6px 3px rgba(49, 186, 249, 0.64);
+}
+
+.light:active {
+    background-color: #238ebf;
+}
+
+.light p {
+    display: block;
+    margin: auto 0;
+    padding-top: 20px;
+}
+
+.light span {
+    font-size: 14px;
+}
+
+.light .loop {
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-image: url(../images/icons_loop.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #31BAF9;
+    border: 3px solid #424242;
+    border-radius: 30px;
+    position: absolute;
+    top: 85px;
+    left: 85px;
+}
+
+.lightcolor {
+    float: left;
+    display: block;
+    color: #31BAF9;
+    font-size: 32px;
+    margin: auto 0;
+    margin-left: 15px;
+    text-align: left;
+}
+
+/*過重*/
+
+.over {
+    width: 117px;
+    height: 117px;
+    border-radius: 70px;
+    border: 6px solid #FF982D;
+    font-size: 32px;
+    color: #FF982D;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 18px;
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.over:hover {
+    box-shadow: 0 1px 6px 3px rgba(255, 152, 45, 0.64);
+}
+
+.over:active {
+    background-color: #d07b24;
+}
+
+.over p {
+    display: block;
+    margin: auto 0;
+    padding-top: 20px;
+}
+
+.over span {
+    font-size: 14px;
+}
+
+.over .loop {
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-image: url(../images/icons_loop.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #FF982D;
+    border: 3px solid #424242;
+    border-radius: 30px;
+    position: absolute;
+    top: 85px;
+    left: 85px;
+}
+
+.overcolor {
+    float: left;
+    display: block;
+    color: #FF982D;
+    font-size: 32px;
+    margin: auto 0;
+    margin-left: 15px;
+    text-align: left;
+}
+
+/*輕度肥胖*/
+/*中度肥胖*/
+
+.medium {
+    width: 117px;
+    height: 117px;
+    border-radius: 70px;
+    border: 6px solid #FF982D;
+    font-size: 32px;
+    color: #FF982D;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 18px;
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.medium:hover {
+    box-shadow: 0 1px 6px 3px rgba(255, 152, 45, 0.64);
+}
+
+.medium:active {
+    background-color: #d37c22;
+}
+
+.medium p {
+    display: block;
+    margin: auto 0;
+    padding-top: 20px;
+}
+
+.medium span {
+    font-size: 14px;
+}
+
+.medium .loop {
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-image: url(../images/icons_loop.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #FF982D;
+    border: 3px solid #424242;
+    border-radius: 30px;
+    position: absolute;
+    top: 85px;
+    left: 85px;
+}
+
+.mediumcolor {
+    float: left;
+    display: block;
+    color: #FF982D;
+    font-size: 32px;
+    margin: auto 0;
+    margin-left: 15px;
+    text-align: left;
+}
+
+/*重度肥胖*/
+
+.heavy {
+    width: 117px;
+    height: 117px;
+    border-radius: 70px;
+    border: 6px solid #FF1200;
+    font-size: 32px;
+    color: #FF1200;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 18px;
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.heavy:hover {
+    box-shadow: 0 1px 6px 3px rgba(255, 18, 0, 0.64);
+}
+
+.heavy:active {
+    background-color: #d61102;
+}
+
+.heavy p {
+    display: block;
+    margin: auto 0;
+    padding-top: 20px;
+}
+
+.heavy span {
+    font-size: 14px;
+}
+
+.heavy .loop {
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-image: url(../images/icons_loop.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #FF1200;
+    border: 3px solid #424242;
+    border-radius: 30px;
+    position: absolute;
+    top: 85px;
+    left: 85px;
+}
+
+.heavycolor {
+    float: left;
+    display: block;
+    color: #FF1200;
+    font-size: 32px;
+    margin: auto 0;
+    margin-left: 15px;
+    text-align: left;
+}
+
+
+/*main*/
+main {
+    padding-bottom: 74px;
+}
+
+h1 {
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    color: #424242;
+    margin-bottom: 36px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+li {
+    width: 624px;
+    height: 62px;
+    background-color: #ffffff;
+    margin: 0 auto 16px auto;
+    display: flex;
+    font-size: 20px;
+    line-height: 62px;
+    position: relative;
+}
+
+/*color*/
+
+.color-i {background-color: #86D73F;};
+.color-l {background-color: #31BAF9;};
+.color-o {background-color: #FF982D;};
+.color-m {background-color: #FF6C02;};
+.color-h {background-color: #FF1200;};
+
+li p {
+}
+
+.txt-result-i ,.txt-result-l ,.txt-result-o {
+    margin-right: 40px;
+}
+
+.txt-result-i:before {
+    content: '';
+    display: inline-block;
+    float: left;
+    width: 7px;
+    height: 62px;
+    background: #86D73F;
+    box-shadow: 2px 0 3px 0 rgba(133,215,63,0.29);
+    margin-right: 19px;
+}
+
+.txt-result-l:before {
+    content: '';
+    display: inline-block;
+    float: left;
+    width: 7px;
+    height: 62px;
+    background-color: #31BAF9;
+    box-shadow: 2px 0 3px 0 rgba(49,186,249,0.29);
+    margin-right: 19px;
+}
+
+.txt-result-o:before {
+    content: '';
+    display: inline-block;
+    float: left;
+    width: 7px;
+    height: 62px;
+    background-color: #FF982D;
+    box-shadow: 2px 0 3px 0 rgba(255,152,45,0.29);
+    margin-right: 19px;
+}
+
+.txt-result-m:before {
+    content: '';
+    display: inline-block;
+    float: left;
+    width: 7px;
+    height: 62px;
+    background-color: #FF6C02;
+    box-shadow: 2px 0 3px 0 rgba(255,108,2,0.29);
+    margin-right: 19px;
+}
+
+.txt-result-h:before {
+    content: '';
+    display: inline-block;
+    float: left;
+    width: 7px;
+    height: 62px;
+    background-color: #FF1200;
+    box-shadow: 2px 0 3px 0 rgba(255,17,0,0.29);
+    margin-right: 19px;
+}
+
+/*文字*/
+.txt-bmi:before {
+    content: 'BMI';
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 7px 0 30px;
+}
+
+.txt-kg {
+    width: 145px;
+}
+
+.txt-kg:before {
+    content: 'weight';
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 7px 0 42px;
+}
+
+.txt-cm:before {
+    content: 'height';
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 7px 0 29px;
+}
+
+.txt-date {
+    display: inline-block;
+    margin-left: 52px;
+    font-size: 12px;
+    line-height: 62px;
+}
+
+/**/
+footer {
+    height: 90px;
+    background: #FFD366;
+    background-image: url(../images/BMICLogo-b.png);
+    background-repeat: no-repeat;
+    background-position:center;
+}
